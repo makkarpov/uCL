@@ -1,0 +1,35 @@
+<idea-plugin>
+  <id>ru.makkarpov.ucl</id>
+  <name>μCL</name>
+  <version>0.1</version>
+  <vendor email="me@makkarpov.ru" url="https://makkarpov.ru">Maxim Karpov</vendor>
+
+  <description><![CDATA[
+      <strong>μCL — CLion for Microcontrollers</strong><br />
+      <p>Allows to upload & debug firmware using OpenOCD. Tested on STM32F4.</p>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      <strong>Version 0.1</strong>
+      <ul>
+        <li>Initial release</li>
+      </ul>
+    ]]>
+  </change-notes>
+
+  <idea-version since-build="171" />
+
+  <depends>com.intellij.modules.clion</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <configurationType implementation="ru.makkarpov.ucl.runner.OCDConfigurationType" />
+    <applicationConfigurable instance="ru.makkarpov.ucl.ui.SettingsConfigurable" />
+  </extensions>
+
+  <application-components>
+    <component>
+      <implementation-class>ru.makkarpov.ucl.GlobalSettings</implementation-class>
+    </component>
+  </application-components>
+
+</idea-plugin>
