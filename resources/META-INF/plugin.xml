@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>ru.makkarpov.ucl</id>
   <name>μCL</name>
-  <version>0.1</version>
+  <version>0.1.1</version>
   <vendor email="me@makkarpov.ru" url="https://makkarpov.ru">Maxim Karpov</vendor>
 
   <description><![CDATA[
@@ -10,6 +10,13 @@
     ]]></description>
 
   <change-notes><![CDATA[
+      <strong>Version 0.1.1</strong>
+      <ul>
+        <li>Added "Run" button which just uploads firmware and exits;</li>
+        <li>Added an option to let the target run immediately after reset;</li>
+        <li>Added possibility to use multiple GDB ports for multiple debug sessions.</li>
+      </ul>
+
       <strong>Version 0.1</strong>
       <ul>
         <li>Initial release</li>

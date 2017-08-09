@@ -8,8 +8,10 @@ import com.intellij.util.xmlb.XmlSerializerUtil;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-@State(name = "ru.makkarpov.ucl.GlobalSettings", storages = @Storage("ucl.xml"))
+@State(name = GlobalSettings.COMPONENT_NAME, storages = @Storage(Utils.GLOBAL_STORAGE))
 public class GlobalSettings implements ApplicationComponent, PersistentStateComponent<GlobalSettings> {
+    static final String COMPONENT_NAME = "ru.makkarpov.ucl.GlobalSettings";
+
     public String ocdExecutablePath = "";
 
     @Override
@@ -23,7 +25,7 @@ public class GlobalSettings implements ApplicationComponent, PersistentStateComp
     @NotNull
     @Override
     public String getComponentName() {
-        return "ru.makkarpov.ucl.GlobalSettings";
+        return COMPONENT_NAME;
     }
 
     @Nullable
