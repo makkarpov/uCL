@@ -14,8 +14,6 @@ import org.jetbrains.annotations.NotNull;
 import ru.makkarpov.ucl.runner.OCDRunConfiguration;
 
 import javax.swing.*;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
 import java.awt.*;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
@@ -24,7 +22,7 @@ public class OCDSettingsEditor extends CMakeAppRunConfigurationSettingsEditor {
     private JBCheckBox uploadFirmware, resetHalt;
     private JBTextField gdbPort;
     private RawCommandLineEditor ocdParameters;
-    private TclEditor ocdScript;
+    private TclScriptField ocdScript;
 
     public OCDSettingsEditor(Project project, @NotNull CMakeBuildConfigurationHelper cMakeBuildConfigurationHelper) {
         super(project, cMakeBuildConfigurationHelper);
@@ -61,7 +59,7 @@ public class OCDSettingsEditor extends CMakeAppRunConfigurationSettingsEditor {
         panel.add(new JBLabel("OpenOCD parameters"), gridBag.nextLine().next());
         panel.add(ocdParameters = new RawCommandLineEditor(), gridBag.next().coverLine());
         panel.add(new JBLabel("OpenOCD script"), gridBag.nextLine().next());
-        panel.add(ocdScript = new TclEditor(""), gridBag.next().coverLine());
+        panel.add(ocdScript = new TclScriptField(""), gridBag.next().coverLine());
         panel.add(new JBLabel("GDB port"), gridBag.nextLine().next());
         panel.add(gdbPort = new JBTextField(""), gridBag.next().coverLine());
 

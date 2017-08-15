@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>ru.makkarpov.ucl</id>
   <name>μCL</name>
-  <version>0.1.1</version>
+  <version>0.1.2</version>
   <vendor email="me@makkarpov.ru" url="https://makkarpov.ru">Maxim Karpov</vendor>
 
   <description><![CDATA[
@@ -10,6 +10,13 @@
     ]]></description>
 
   <change-notes><![CDATA[
+      <strong>Version 0.1.2</strong>
+      <ul>
+        <li>Fixed TCL script editor exception on CLion 2017.2 (due to usage of private APIs) and added plain
+            <code>JTextArea</code> fallback.</li>
+        <li>Fixed bug that caused broken newlines in scripts</li>
+      </ul>
+
       <strong>Version 0.1.1</strong>
       <ul>
         <li>Added "Run" button which just uploads firmware and exits;</li>

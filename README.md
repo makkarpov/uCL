@@ -5,4 +5,6 @@
 
 **μCL** is a tiny CLion plugin that brings CLion and OpenOCD together. Upload firmware and start debugging just in one click!
 
+**Get it from [JetBrains plugin repository](https://plugins.jetbrains.com/plugin/9915--cl)**
+
 **Tested on STM32F407**

@@ -69,11 +69,11 @@ public class OCDRunConfiguration extends CMakeAppRunConfiguration {
         element.setAttribute(RESET_HALT_ATTR, String.valueOf(resetHalt), NAMESPACE);
 
         Element scriptElement = new Element(SCRIPT_NODE, NAMESPACE);
-        scriptElement.addContent(new CDATA(script));
+        scriptElement.setText(script);
         element.addContent(scriptElement);
 
         Element parametersElement = new Element(PARAMETERS_NODE, NAMESPACE);
-        parametersElement.addContent(new CDATA(parameters));
+        parametersElement.setText(parameters);
         element.addContent(parametersElement);
     }
 
