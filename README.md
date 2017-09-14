@@ -8,3 +8,11 @@
 **Get it from [JetBrains plugin repository](https://plugins.jetbrains.com/plugin/9915--cl)**
 
 **Tested on STM32F407**
+
+Getting started
+---------------
+
+1. Set path to `arm-none-eabi-gdb` executable as global GDB path
+2. Set path to `openocd` executable in plugin settings
+3. Copy appropriate OpenOCD script to the parameters of launch configuration
+4. Just click **Run** (upload firmware without debugging) or **Debug** and enjoy.
