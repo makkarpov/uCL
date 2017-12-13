@@ -1,5 +1,12 @@
+Abandoned and not maintained
+============================
+
+As of CLion 2017.3, CLion devs screwed up everything again and I don't managed to get it running yet. This plugin was developed when no other alternatives existed. Now these alternatives appeared: https://github.com/elmot/clion-embedded-arm
+
+Internal classes of CLion are obfuscated, so fernflower, which is a default IntelliJ Java decompiler, refuses to decompile them. Fixing and debugging this obfuscated stuff is not enjoyable to anyone, so I stop maintaining this project. Plugin is no longer supported nor updated.
+
 μCL — CLion for Microcontrollers
-================================
+--------------------------------
 
 ![image](https://user-images.githubusercontent.com/1329592/29126009-e943f5a6-7d25-11e7-824a-89821f566638.png)
 
